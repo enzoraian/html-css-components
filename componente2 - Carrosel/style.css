@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+/*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+:root {
+  --main-color: #087f5b;
+  --grey-color: #343a40;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--grey-color);
+  line-height: 1;
+}
+
+img {
+  max-width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25); /*sombra*/
+
+  /*****************************************************************/
+  transform: scale(1.5);
+}
+
+/*CARROSEL*/
+.carrosel {
+  background: var(--main-color);
+  color: #fff;
+
+  width: 800px;
+  margin: 100px auto;
+  padding: 32px;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 86px;
+
+  /*******************************************************************/
+  padding-left: 86px;
+  position: relative;
+}
+
+.testemunha-texto {
+  color: #e6fcf5;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+.testemunha-nome {
+  color: #c3fae8;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.testemunha-cargo {
+  color: #c3fae8;
+  font-size: 12px;
+}
+
+/*BOTÃO*/
+.btn {
+  background: #fff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /******************/
+  position: absolute;
+}
+
+.btn svg {
+  height: 24px;
+  width: 24px;
+  stroke: #087f5b;
+}
+
+.btn-esquerda {
+  left: 0;
+
+  /********************/
+  /*alinhar elemento verticalmente*/
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-direita {
+  right: 0;
+
+  /********************/
+  /*alinhar elemento verticalmente*/
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+/*BOLINHAS*/
+.bolinhas {
+  /************/
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 32px);
+
+  display: flex;
+  gap: 12px;
+}
+
+.bolinha {
+  height: 12px;
+  width: 12px;
+  color: #fff;
+  border: 2px solid #087f5b;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.bolinha:first-child {
+  background: #087f5b;
+}
