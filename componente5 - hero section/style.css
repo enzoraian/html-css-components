@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+/*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/*PADRÕES INICIAIS*/
+html {
+  font-family: 'Inter';
+  color: #444;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*CENTRALIZA ELEMENTOS*/
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  height: 100vh;
+  color: white;
+
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(../imagens/hero.jpg);
+
+  /*elemento pai*/
+  position: relative;
+}
+
+/******************************************/
+.align-center {
+  width: 1200px;
+
+  position: absolute;
+
+  /*tamanho do elemento pai*/
+  left: 50%;
+  top: 50%;
+
+  /*tamanho do elemento*/
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  width: 50%;
+}
+
+/*BARRA NAV*/
+nav {
+  font-size: 20px;
+  font-weight: 700;
+
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+}
+
+h1 {
+  font-size: 52px;
+  margin-bottom: 32px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 48px;
+}
+
+/*BOTÃO*/
+.btn:link,
+.btn:visited {
+  font-size: 20px;
+  font-weight: 600;
+  background: #e67e22;
+  color: white;
+  text-decoration: none;
+
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 9px;
+}
+
+h2 {
+  font-size: 44px;
+  margin-bottom: 48px;
+}
+
+section {
+  background: #f7f7f7;
+  padding: 96px 0px;
+}
